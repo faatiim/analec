@@ -1,3 +1,21 @@
+# 2022
+
+import duckdb
+
+con = duckdb.connect("data/warehouse/electricite.duckdb", read_only=True)
+
+print(con.sql("""
+    SELECT f.rang_acces, p.nom_pays, f.acces_total, f.acces_urbain,
+           f.acces_rural, f.ecart_urbain_rural, f.pop_sans_electricite
+    FROM marts.fct_electricite f
+    JOIN marts.dim_pays p USING (code_pays)
+    WHERE f.annee = 2022
+    ORDER BY f.rang_acces
+"""))
+
+con.close()
+# GLOBAL
+
 import duckdb
 
 con = duckdb.connect("data/warehouse/electricite.duckdb", read_only=True)
@@ -12,3 +30,4 @@ print(con.sql("""
 """))
 
 con.close()
+

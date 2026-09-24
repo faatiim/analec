@@ -1,27 +1,27 @@
 -- Tables finales pour Power BI
 CREATE SCHEMA IF NOT EXISTS marts;
 
--- Dimension : un pays par ligne
-CREATE OR REPLACE TABLE marts.dim_pays AS
-SELECT DISTINCT code_pays, nom_pays, code_pays = 'SEN' AS est_senegal
-FROM staging.stg_indicateurs;
+-- -- Dimension : un pays par ligne
+-- CREATE OR REPLACE TABLE marts.dim_pays AS
+-- SELECT DISTINCT code_pays, nom_pays, code_pays = 'SEN' AS est_senegal
+-- FROM staging.stg_indicateurs;
 
 -- Dimension : un pays par ligne, avec le nom en français
--- CREATE OR REPLACE TABLE marts.dim_pays AS
--- SELECT DISTINCT code_pays,
---        CASE code_pays
---            WHEN 'SEN' THEN 'Sénégal'
---            WHEN 'CIV' THEN 'Côte d''Ivoire'
---            WHEN 'MLI' THEN 'Mali'
---            WHEN 'GIN' THEN 'Guinée'
---            WHEN 'MRT' THEN 'Mauritanie'
---            WHEN 'GMB' THEN 'Gambie'
---            WHEN 'BFA' THEN 'Burkina Faso'
---            WHEN 'GHA' THEN 'Ghana'
---            ELSE nom_pays
---        END AS nom_pays,
---        code_pays = 'SEN' AS est_senegal
--- FROM staging.stg_indicateurs;
+CREATE OR REPLACE TABLE marts.dim_pays AS
+SELECT DISTINCT code_pays,
+       CASE code_pays
+           WHEN 'SEN' THEN 'Sénégal'
+           WHEN 'CIV' THEN 'Côte d''Ivoire'
+           WHEN 'MLI' THEN 'Mali'
+           WHEN 'GIN' THEN 'Guinée'
+           WHEN 'MRT' THEN 'Mauritanie'
+           WHEN 'GMB' THEN 'Gambie'
+           WHEN 'BFA' THEN 'Burkina Faso'
+           WHEN 'GHA' THEN 'Ghana'
+           ELSE nom_pays
+       END AS nom_pays,
+       code_pays = 'SEN' AS est_senegal
+FROM staging.stg_indicateurs;
 
 -- Faits : une ligne par pays et par année, avec les calculs métier
 CREATE OR REPLACE TABLE marts.fct_electricite AS

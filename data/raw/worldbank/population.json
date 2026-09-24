@@ -1,0 +1,3202 @@
+[
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "BF",
+      "value": "Burkina Faso"
+    },
+    "countryiso3code": "BFA",
+    "date": "2024",
+    "value": 23548781,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "BF",
+      "value": "Burkina Faso"
+    },
+    "countryiso3code": "BFA",
+    "date": "2023",
+    "value": 23025776,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "BF",
+      "value": "Burkina Faso"
+    },
+    "countryiso3code": "BFA",
+    "date": "2022",
+    "value": 22509038,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "BF",
+      "value": "Burkina Faso"
+    },
+    "countryiso3code": "BFA",
+    "date": "2021",
+    "value": 21995243,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "BF",
+      "value": "Burkina Faso"
+    },
+    "countryiso3code": "BFA",
+    "date": "2020",
+    "value": 21478690,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "BF",
+      "value": "Burkina Faso"
+    },
+    "countryiso3code": "BFA",
+    "date": "2019",
+    "value": 20961952,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "BF",
+      "value": "Burkina Faso"
+    },
+    "countryiso3code": "BFA",
+    "date": "2018",
+    "value": 20438288,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "BF",
+      "value": "Burkina Faso"
+    },
+    "countryiso3code": "BFA",
+    "date": "2017",
+    "value": 19894407,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "BF",
+      "value": "Burkina Faso"
+    },
+    "countryiso3code": "BFA",
+    "date": "2016",
+    "value": 19334856,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "BF",
+      "value": "Burkina Faso"
+    },
+    "countryiso3code": "BFA",
+    "date": "2015",
+    "value": 18777487,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "BF",
+      "value": "Burkina Faso"
+    },
+    "countryiso3code": "BFA",
+    "date": "2014",
+    "value": 18229461,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "BF",
+      "value": "Burkina Faso"
+    },
+    "countryiso3code": "BFA",
+    "date": "2013",
+    "value": 17695409,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "BF",
+      "value": "Burkina Faso"
+    },
+    "countryiso3code": "BFA",
+    "date": "2012",
+    "value": 17172287,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "BF",
+      "value": "Burkina Faso"
+    },
+    "countryiso3code": "BFA",
+    "date": "2011",
+    "value": 16661908,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "BF",
+      "value": "Burkina Faso"
+    },
+    "countryiso3code": "BFA",
+    "date": "2010",
+    "value": 16176498,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "BF",
+      "value": "Burkina Faso"
+    },
+    "countryiso3code": "BFA",
+    "date": "2009",
+    "value": 15710066,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "BF",
+      "value": "Burkina Faso"
+    },
+    "countryiso3code": "BFA",
+    "date": "2008",
+    "value": 15258093,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "BF",
+      "value": "Burkina Faso"
+    },
+    "countryiso3code": "BFA",
+    "date": "2007",
+    "value": 14816307,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "BF",
+      "value": "Burkina Faso"
+    },
+    "countryiso3code": "BFA",
+    "date": "2006",
+    "value": 14373707,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "BF",
+      "value": "Burkina Faso"
+    },
+    "countryiso3code": "BFA",
+    "date": "2005",
+    "value": 13932123,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "BF",
+      "value": "Burkina Faso"
+    },
+    "countryiso3code": "BFA",
+    "date": "2004",
+    "value": 13500533,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "BF",
+      "value": "Burkina Faso"
+    },
+    "countryiso3code": "BFA",
+    "date": "2003",
+    "value": 13082532,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "BF",
+      "value": "Burkina Faso"
+    },
+    "countryiso3code": "BFA",
+    "date": "2002",
+    "value": 12680897,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "BF",
+      "value": "Burkina Faso"
+    },
+    "countryiso3code": "BFA",
+    "date": "2001",
+    "value": 12295001,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "BF",
+      "value": "Burkina Faso"
+    },
+    "countryiso3code": "BFA",
+    "date": "2000",
+    "value": 11925546,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "CI",
+      "value": "Cote d'Ivoire"
+    },
+    "countryiso3code": "CIV",
+    "date": "2024",
+    "value": 31934230,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "CI",
+      "value": "Cote d'Ivoire"
+    },
+    "countryiso3code": "CIV",
+    "date": "2023",
+    "value": 31165654,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "CI",
+      "value": "Cote d'Ivoire"
+    },
+    "countryiso3code": "CIV",
+    "date": "2022",
+    "value": 30395002,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "CI",
+      "value": "Cote d'Ivoire"
+    },
+    "countryiso3code": "CIV",
+    "date": "2021",
+    "value": 29639736,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "CI",
+      "value": "Cote d'Ivoire"
+    },
+    "countryiso3code": "CIV",
+    "date": "2020",
+    "value": 28915449,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "CI",
+      "value": "Cote d'Ivoire"
+    },
+    "countryiso3code": "CIV",
+    "date": "2019",
+    "value": 28193009,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "CI",
+      "value": "Cote d'Ivoire"
+    },
+    "countryiso3code": "CIV",
+    "date": "2018",
+    "value": 27464173,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "CI",
+      "value": "Cote d'Ivoire"
+    },
+    "countryiso3code": "CIV",
+    "date": "2017",
+    "value": 26733372,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "CI",
+      "value": "Cote d'Ivoire"
+    },
+    "countryiso3code": "CIV",
+    "date": "2016",
+    "value": 25989405,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "CI",
+      "value": "Cote d'Ivoire"
+    },
+    "countryiso3code": "CIV",
+    "date": "2015",
+    "value": 25246342,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "CI",
+      "value": "Cote d'Ivoire"
+    },
+    "countryiso3code": "CIV",
+    "date": "2014",
+    "value": 24527395,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "CI",
+      "value": "Cote d'Ivoire"
+    },
+    "countryiso3code": "CIV",
+    "date": "2013",
+    "value": 23939775,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "CI",
+      "value": "Cote d'Ivoire"
+    },
+    "countryiso3code": "CIV",
+    "date": "2012",
+    "value": 23467078,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "CI",
+      "value": "Cote d'Ivoire"
+    },
+    "countryiso3code": "CIV",
+    "date": "2011",
+    "value": 22982000,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "CI",
+      "value": "Cote d'Ivoire"
+    },
+    "countryiso3code": "CIV",
+    "date": "2010",
+    "value": 22488065,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "CI",
+      "value": "Cote d'Ivoire"
+    },
+    "countryiso3code": "CIV",
+    "date": "2009",
+    "value": 21997940,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "CI",
+      "value": "Cote d'Ivoire"
+    },
+    "countryiso3code": "CIV",
+    "date": "2008",
+    "value": 21514439,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "CI",
+      "value": "Cote d'Ivoire"
+    },
+    "countryiso3code": "CIV",
+    "date": "2007",
+    "value": 21030558,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "CI",
+      "value": "Cote d'Ivoire"
+    },
+    "countryiso3code": "CIV",
+    "date": "2006",
+    "value": 20546802,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "CI",
+      "value": "Cote d'Ivoire"
+    },
+    "countryiso3code": "CIV",
+    "date": "2005",
+    "value": 20068458,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "CI",
+      "value": "Cote d'Ivoire"
+    },
+    "countryiso3code": "CIV",
+    "date": "2004",
+    "value": 19595000,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "CI",
+      "value": "Cote d'Ivoire"
+    },
+    "countryiso3code": "CIV",
+    "date": "2003",
+    "value": 19125542,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "CI",
+      "value": "Cote d'Ivoire"
+    },
+    "countryiso3code": "CIV",
+    "date": "2002",
+    "value": 18654771,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "CI",
+      "value": "Cote d'Ivoire"
+    },
+    "countryiso3code": "CIV",
+    "date": "2001",
+    "value": 18178913,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "CI",
+      "value": "Cote d'Ivoire"
+    },
+    "countryiso3code": "CIV",
+    "date": "2000",
+    "value": 17699004,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GH",
+      "value": "Ghana"
+    },
+    "countryiso3code": "GHA",
+    "date": "2024",
+    "value": 34427414,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GH",
+      "value": "Ghana"
+    },
+    "countryiso3code": "GHA",
+    "date": "2023",
+    "value": 33787914,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GH",
+      "value": "Ghana"
+    },
+    "countryiso3code": "GHA",
+    "date": "2022",
+    "value": 33149152,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GH",
+      "value": "Ghana"
+    },
+    "countryiso3code": "GHA",
+    "date": "2021",
+    "value": 32518665,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GH",
+      "value": "Ghana"
+    },
+    "countryiso3code": "GHA",
+    "date": "2020",
+    "value": 31887809,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GH",
+      "value": "Ghana"
+    },
+    "countryiso3code": "GHA",
+    "date": "2019",
+    "value": 31258945,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GH",
+      "value": "Ghana"
+    },
+    "countryiso3code": "GHA",
+    "date": "2018",
+    "value": 30637585,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GH",
+      "value": "Ghana"
+    },
+    "countryiso3code": "GHA",
+    "date": "2017",
+    "value": 30008354,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GH",
+      "value": "Ghana"
+    },
+    "countryiso3code": "GHA",
+    "date": "2016",
+    "value": 29356742,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GH",
+      "value": "Ghana"
+    },
+    "countryiso3code": "GHA",
+    "date": "2015",
+    "value": 28696068,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GH",
+      "value": "Ghana"
+    },
+    "countryiso3code": "GHA",
+    "date": "2014",
+    "value": 28041592,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GH",
+      "value": "Ghana"
+    },
+    "countryiso3code": "GHA",
+    "date": "2013",
+    "value": 27386193,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GH",
+      "value": "Ghana"
+    },
+    "countryiso3code": "GHA",
+    "date": "2012",
+    "value": 26734268,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GH",
+      "value": "Ghana"
+    },
+    "countryiso3code": "GHA",
+    "date": "2011",
+    "value": 26095088,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GH",
+      "value": "Ghana"
+    },
+    "countryiso3code": "GHA",
+    "date": "2010",
+    "value": 25474995,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GH",
+      "value": "Ghana"
+    },
+    "countryiso3code": "GHA",
+    "date": "2009",
+    "value": 24862664,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GH",
+      "value": "Ghana"
+    },
+    "countryiso3code": "GHA",
+    "date": "2008",
+    "value": 24249946,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GH",
+      "value": "Ghana"
+    },
+    "countryiso3code": "GHA",
+    "date": "2007",
+    "value": 23642279,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GH",
+      "value": "Ghana"
+    },
+    "countryiso3code": "GHA",
+    "date": "2006",
+    "value": 23040702,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GH",
+      "value": "Ghana"
+    },
+    "countryiso3code": "GHA",
+    "date": "2005",
+    "value": 22449438,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GH",
+      "value": "Ghana"
+    },
+    "countryiso3code": "GHA",
+    "date": "2004",
+    "value": 21868298,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GH",
+      "value": "Ghana"
+    },
+    "countryiso3code": "GHA",
+    "date": "2003",
+    "value": 21296705,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GH",
+      "value": "Ghana"
+    },
+    "countryiso3code": "GHA",
+    "date": "2002",
+    "value": 20729388,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GH",
+      "value": "Ghana"
+    },
+    "countryiso3code": "GHA",
+    "date": "2001",
+    "value": 20167069,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GH",
+      "value": "Ghana"
+    },
+    "countryiso3code": "GHA",
+    "date": "2000",
+    "value": 19637087,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GN",
+      "value": "Guinea"
+    },
+    "countryiso3code": "GIN",
+    "date": "2024",
+    "value": 14754785,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GN",
+      "value": "Guinea"
+    },
+    "countryiso3code": "GIN",
+    "date": "2023",
+    "value": 14405468,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GN",
+      "value": "Guinea"
+    },
+    "countryiso3code": "GIN",
+    "date": "2022",
+    "value": 14055137,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GN",
+      "value": "Guinea"
+    },
+    "countryiso3code": "GIN",
+    "date": "2021",
+    "value": 13710513,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GN",
+      "value": "Guinea"
+    },
+    "countryiso3code": "GIN",
+    "date": "2020",
+    "value": 13371183,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GN",
+      "value": "Guinea"
+    },
+    "countryiso3code": "GIN",
+    "date": "2019",
+    "value": 13034346,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GN",
+      "value": "Guinea"
+    },
+    "countryiso3code": "GIN",
+    "date": "2018",
+    "value": 12704774,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GN",
+      "value": "Guinea"
+    },
+    "countryiso3code": "GIN",
+    "date": "2017",
+    "value": 12385659,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GN",
+      "value": "Guinea"
+    },
+    "countryiso3code": "GIN",
+    "date": "2016",
+    "value": 12073030,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GN",
+      "value": "Guinea"
+    },
+    "countryiso3code": "GIN",
+    "date": "2015",
+    "value": 11767070,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GN",
+      "value": "Guinea"
+    },
+    "countryiso3code": "GIN",
+    "date": "2014",
+    "value": 11472924,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GN",
+      "value": "Guinea"
+    },
+    "countryiso3code": "GIN",
+    "date": "2013",
+    "value": 11191873,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GN",
+      "value": "Guinea"
+    },
+    "countryiso3code": "GIN",
+    "date": "2012",
+    "value": 10921581,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GN",
+      "value": "Guinea"
+    },
+    "countryiso3code": "GIN",
+    "date": "2011",
+    "value": 10656810,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GN",
+      "value": "Guinea"
+    },
+    "countryiso3code": "GIN",
+    "date": "2010",
+    "value": 10396086,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GN",
+      "value": "Guinea"
+    },
+    "countryiso3code": "GIN",
+    "date": "2009",
+    "value": 10143534,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GN",
+      "value": "Guinea"
+    },
+    "countryiso3code": "GIN",
+    "date": "2008",
+    "value": 9898870,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GN",
+      "value": "Guinea"
+    },
+    "countryiso3code": "GIN",
+    "date": "2007",
+    "value": 9662281,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GN",
+      "value": "Guinea"
+    },
+    "countryiso3code": "GIN",
+    "date": "2006",
+    "value": 9441171,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GN",
+      "value": "Guinea"
+    },
+    "countryiso3code": "GIN",
+    "date": "2005",
+    "value": 9245844,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GN",
+      "value": "Guinea"
+    },
+    "countryiso3code": "GIN",
+    "date": "2004",
+    "value": 9062726,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GN",
+      "value": "Guinea"
+    },
+    "countryiso3code": "GIN",
+    "date": "2003",
+    "value": 8870781,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GN",
+      "value": "Guinea"
+    },
+    "countryiso3code": "GIN",
+    "date": "2002",
+    "value": 8674066,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GN",
+      "value": "Guinea"
+    },
+    "countryiso3code": "GIN",
+    "date": "2001",
+    "value": 8539960,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GN",
+      "value": "Guinea"
+    },
+    "countryiso3code": "GIN",
+    "date": "2000",
+    "value": 8428832,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GM",
+      "value": "Gambia, The"
+    },
+    "countryiso3code": "GMB",
+    "date": "2024",
+    "value": 2759988,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GM",
+      "value": "Gambia, The"
+    },
+    "countryiso3code": "GMB",
+    "date": "2023",
+    "value": 2697845,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GM",
+      "value": "Gambia, The"
+    },
+    "countryiso3code": "GMB",
+    "date": "2022",
+    "value": 2636470,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GM",
+      "value": "Gambia, The"
+    },
+    "countryiso3code": "GMB",
+    "date": "2021",
+    "value": 2576010,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GM",
+      "value": "Gambia, The"
+    },
+    "countryiso3code": "GMB",
+    "date": "2020",
+    "value": 2515733,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GM",
+      "value": "Gambia, The"
+    },
+    "countryiso3code": "GMB",
+    "date": "2019",
+    "value": 2456844,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GM",
+      "value": "Gambia, The"
+    },
+    "countryiso3code": "GMB",
+    "date": "2018",
+    "value": 2399632,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GM",
+      "value": "Gambia, The"
+    },
+    "countryiso3code": "GMB",
+    "date": "2017",
+    "value": 2342189,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GM",
+      "value": "Gambia, The"
+    },
+    "countryiso3code": "GMB",
+    "date": "2016",
+    "value": 2283769,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GM",
+      "value": "Gambia, The"
+    },
+    "countryiso3code": "GMB",
+    "date": "2015",
+    "value": 2224529,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GM",
+      "value": "Gambia, The"
+    },
+    "countryiso3code": "GMB",
+    "date": "2014",
+    "value": 2164528,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GM",
+      "value": "Gambia, The"
+    },
+    "countryiso3code": "GMB",
+    "date": "2013",
+    "value": 2103820,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GM",
+      "value": "Gambia, The"
+    },
+    "countryiso3code": "GMB",
+    "date": "2012",
+    "value": 2043094,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GM",
+      "value": "Gambia, The"
+    },
+    "countryiso3code": "GMB",
+    "date": "2011",
+    "value": 1983784,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GM",
+      "value": "Gambia, The"
+    },
+    "countryiso3code": "GMB",
+    "date": "2010",
+    "value": 1926630,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GM",
+      "value": "Gambia, The"
+    },
+    "countryiso3code": "GMB",
+    "date": "2009",
+    "value": 1871422,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GM",
+      "value": "Gambia, The"
+    },
+    "countryiso3code": "GMB",
+    "date": "2008",
+    "value": 1817852,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GM",
+      "value": "Gambia, The"
+    },
+    "countryiso3code": "GMB",
+    "date": "2007",
+    "value": 1765774,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GM",
+      "value": "Gambia, The"
+    },
+    "countryiso3code": "GMB",
+    "date": "2006",
+    "value": 1715275,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GM",
+      "value": "Gambia, The"
+    },
+    "countryiso3code": "GMB",
+    "date": "2005",
+    "value": 1667037,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GM",
+      "value": "Gambia, The"
+    },
+    "countryiso3code": "GMB",
+    "date": "2004",
+    "value": 1621312,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GM",
+      "value": "Gambia, The"
+    },
+    "countryiso3code": "GMB",
+    "date": "2003",
+    "value": 1577611,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GM",
+      "value": "Gambia, The"
+    },
+    "countryiso3code": "GMB",
+    "date": "2002",
+    "value": 1535691,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GM",
+      "value": "Gambia, The"
+    },
+    "countryiso3code": "GMB",
+    "date": "2001",
+    "value": 1495011,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "GM",
+      "value": "Gambia, The"
+    },
+    "countryiso3code": "GMB",
+    "date": "2000",
+    "value": 1455084,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "ML",
+      "value": "Mali"
+    },
+    "countryiso3code": "MLI",
+    "date": "2024",
+    "value": 24478595,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "ML",
+      "value": "Mali"
+    },
+    "countryiso3code": "MLI",
+    "date": "2023",
+    "value": 23769127,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "ML",
+      "value": "Mali"
+    },
+    "countryiso3code": "MLI",
+    "date": "2022",
+    "value": 23072640,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "ML",
+      "value": "Mali"
+    },
+    "countryiso3code": "MLI",
+    "date": "2021",
+    "value": 22388630,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "ML",
+      "value": "Mali"
+    },
+    "countryiso3code": "MLI",
+    "date": "2020",
+    "value": 21713836,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "ML",
+      "value": "Mali"
+    },
+    "countryiso3code": "MLI",
+    "date": "2019",
+    "value": 21068405,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "ML",
+      "value": "Mali"
+    },
+    "countryiso3code": "MLI",
+    "date": "2018",
+    "value": 20442030,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "ML",
+      "value": "Mali"
+    },
+    "countryiso3code": "MLI",
+    "date": "2017",
+    "value": 19813011,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "ML",
+      "value": "Mali"
+    },
+    "countryiso3code": "MLI",
+    "date": "2016",
+    "value": 19191289,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "ML",
+      "value": "Mali"
+    },
+    "countryiso3code": "MLI",
+    "date": "2015",
+    "value": 18593022,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "ML",
+      "value": "Mali"
+    },
+    "countryiso3code": "MLI",
+    "date": "2014",
+    "value": 18020267,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "ML",
+      "value": "Mali"
+    },
+    "countryiso3code": "MLI",
+    "date": "2013",
+    "value": 17459615,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "ML",
+      "value": "Mali"
+    },
+    "countryiso3code": "MLI",
+    "date": "2012",
+    "value": 16957033,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "ML",
+      "value": "Mali"
+    },
+    "countryiso3code": "MLI",
+    "date": "2011",
+    "value": 16469049,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "ML",
+      "value": "Mali"
+    },
+    "countryiso3code": "MLI",
+    "date": "2010",
+    "value": 15945198,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "ML",
+      "value": "Mali"
+    },
+    "countryiso3code": "MLI",
+    "date": "2009",
+    "value": 15435539,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "ML",
+      "value": "Mali"
+    },
+    "countryiso3code": "MLI",
+    "date": "2008",
+    "value": 14940782,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "ML",
+      "value": "Mali"
+    },
+    "countryiso3code": "MLI",
+    "date": "2007",
+    "value": 14457775,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "ML",
+      "value": "Mali"
+    },
+    "countryiso3code": "MLI",
+    "date": "2006",
+    "value": 13990139,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "ML",
+      "value": "Mali"
+    },
+    "countryiso3code": "MLI",
+    "date": "2005",
+    "value": 13538647,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "ML",
+      "value": "Mali"
+    },
+    "countryiso3code": "MLI",
+    "date": "2004",
+    "value": 13102409,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "ML",
+      "value": "Mali"
+    },
+    "countryiso3code": "MLI",
+    "date": "2003",
+    "value": 12684955,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "ML",
+      "value": "Mali"
+    },
+    "countryiso3code": "MLI",
+    "date": "2002",
+    "value": 12288050,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "ML",
+      "value": "Mali"
+    },
+    "countryiso3code": "MLI",
+    "date": "2001",
+    "value": 11912158,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "ML",
+      "value": "Mali"
+    },
+    "countryiso3code": "MLI",
+    "date": "2000",
+    "value": 11559290,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "MR",
+      "value": "Mauritania"
+    },
+    "countryiso3code": "MRT",
+    "date": "2024",
+    "value": 5169395,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "MR",
+      "value": "Mauritania"
+    },
+    "countryiso3code": "MRT",
+    "date": "2023",
+    "value": 5022441,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "MR",
+      "value": "Mauritania"
+    },
+    "countryiso3code": "MRT",
+    "date": "2022",
+    "value": 4875637,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "MR",
+      "value": "Mauritania"
+    },
+    "countryiso3code": "MRT",
+    "date": "2021",
+    "value": 4734874,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "MR",
+      "value": "Mauritania"
+    },
+    "countryiso3code": "MRT",
+    "date": "2020",
+    "value": 4600131,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "MR",
+      "value": "Mauritania"
+    },
+    "countryiso3code": "MRT",
+    "date": "2019",
+    "value": 4467708,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "MR",
+      "value": "Mauritania"
+    },
+    "countryiso3code": "MRT",
+    "date": "2018",
+    "value": 4337685,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "MR",
+      "value": "Mauritania"
+    },
+    "countryiso3code": "MRT",
+    "date": "2017",
+    "value": 4210600,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "MR",
+      "value": "Mauritania"
+    },
+    "countryiso3code": "MRT",
+    "date": "2016",
+    "value": 4086657,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "MR",
+      "value": "Mauritania"
+    },
+    "countryiso3code": "MRT",
+    "date": "2015",
+    "value": 3965959,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "MR",
+      "value": "Mauritania"
+    },
+    "countryiso3code": "MRT",
+    "date": "2014",
+    "value": 3848514,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "MR",
+      "value": "Mauritania"
+    },
+    "countryiso3code": "MRT",
+    "date": "2013",
+    "value": 3734318,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "MR",
+      "value": "Mauritania"
+    },
+    "countryiso3code": "MRT",
+    "date": "2012",
+    "value": 3619034,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "MR",
+      "value": "Mauritania"
+    },
+    "countryiso3code": "MRT",
+    "date": "2011",
+    "value": 3502811,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "MR",
+      "value": "Mauritania"
+    },
+    "countryiso3code": "MRT",
+    "date": "2010",
+    "value": 3390965,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "MR",
+      "value": "Mauritania"
+    },
+    "countryiso3code": "MRT",
+    "date": "2009",
+    "value": 3284448,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "MR",
+      "value": "Mauritania"
+    },
+    "countryiso3code": "MRT",
+    "date": "2008",
+    "value": 3183269,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "MR",
+      "value": "Mauritania"
+    },
+    "countryiso3code": "MRT",
+    "date": "2007",
+    "value": 3093059,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "MR",
+      "value": "Mauritania"
+    },
+    "countryiso3code": "MRT",
+    "date": "2006",
+    "value": 3013660,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "MR",
+      "value": "Mauritania"
+    },
+    "countryiso3code": "MRT",
+    "date": "2005",
+    "value": 2939059,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "MR",
+      "value": "Mauritania"
+    },
+    "countryiso3code": "MRT",
+    "date": "2004",
+    "value": 2868664,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "MR",
+      "value": "Mauritania"
+    },
+    "countryiso3code": "MRT",
+    "date": "2003",
+    "value": 2802046,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "MR",
+      "value": "Mauritania"
+    },
+    "countryiso3code": "MRT",
+    "date": "2002",
+    "value": 2738655,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "MR",
+      "value": "Mauritania"
+    },
+    "countryiso3code": "MRT",
+    "date": "2001",
+    "value": 2678760,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "MR",
+      "value": "Mauritania"
+    },
+    "countryiso3code": "MRT",
+    "date": "2000",
+    "value": 2613441,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "SN",
+      "value": "Senegal"
+    },
+    "countryiso3code": "SEN",
+    "date": "2024",
+    "value": 18501984,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "SN",
+      "value": "Senegal"
+    },
+    "countryiso3code": "SEN",
+    "date": "2023",
+    "value": 18077573,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "SN",
+      "value": "Senegal"
+    },
+    "countryiso3code": "SEN",
+    "date": "2022",
+    "value": 17651103,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "SN",
+      "value": "Senegal"
+    },
+    "countryiso3code": "SEN",
+    "date": "2021",
+    "value": 17220867,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "SN",
+      "value": "Senegal"
+    },
+    "countryiso3code": "SEN",
+    "date": "2020",
+    "value": 16789219,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "SN",
+      "value": "Senegal"
+    },
+    "countryiso3code": "SEN",
+    "date": "2019",
+    "value": 16352922,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "SN",
+      "value": "Senegal"
+    },
+    "countryiso3code": "SEN",
+    "date": "2018",
+    "value": 15914498,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "SN",
+      "value": "Senegal"
+    },
+    "countryiso3code": "SEN",
+    "date": "2017",
+    "value": 15475002,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "SN",
+      "value": "Senegal"
+    },
+    "countryiso3code": "SEN",
+    "date": "2016",
+    "value": 15034521,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "SN",
+      "value": "Senegal"
+    },
+    "countryiso3code": "SEN",
+    "date": "2015",
+    "value": 14593331,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "SN",
+      "value": "Senegal"
+    },
+    "countryiso3code": "SEN",
+    "date": "2014",
+    "value": 14152102,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "SN",
+      "value": "Senegal"
+    },
+    "countryiso3code": "SEN",
+    "date": "2013",
+    "value": 13710849,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "SN",
+      "value": "Senegal"
+    },
+    "countryiso3code": "SEN",
+    "date": "2012",
+    "value": 13310495,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "SN",
+      "value": "Senegal"
+    },
+    "countryiso3code": "SEN",
+    "date": "2011",
+    "value": 12958897,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "SN",
+      "value": "Senegal"
+    },
+    "countryiso3code": "SEN",
+    "date": "2010",
+    "value": 12635413,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "SN",
+      "value": "Senegal"
+    },
+    "countryiso3code": "SEN",
+    "date": "2009",
+    "value": 12337389,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "SN",
+      "value": "Senegal"
+    },
+    "countryiso3code": "SEN",
+    "date": "2008",
+    "value": 12048959,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "SN",
+      "value": "Senegal"
+    },
+    "countryiso3code": "SEN",
+    "date": "2007",
+    "value": 11770344,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "SN",
+      "value": "Senegal"
+    },
+    "countryiso3code": "SEN",
+    "date": "2006",
+    "value": 11500094,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "SN",
+      "value": "Senegal"
+    },
+    "countryiso3code": "SEN",
+    "date": "2005",
+    "value": 11235472,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "SN",
+      "value": "Senegal"
+    },
+    "countryiso3code": "SEN",
+    "date": "2004",
+    "value": 10975704,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "SN",
+      "value": "Senegal"
+    },
+    "countryiso3code": "SEN",
+    "date": "2003",
+    "value": 10721176,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "SN",
+      "value": "Senegal"
+    },
+    "countryiso3code": "SEN",
+    "date": "2002",
+    "value": 10466214,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "SN",
+      "value": "Senegal"
+    },
+    "countryiso3code": "SEN",
+    "date": "2001",
+    "value": 10212942,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  },
+  {
+    "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+    },
+    "country": {
+      "id": "SN",
+      "value": "Senegal"
+    },
+    "countryiso3code": "SEN",
+    "date": "2000",
+    "value": 9968260,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 0
+  }
+]

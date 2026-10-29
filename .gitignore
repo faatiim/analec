@@ -1,3 +1,12 @@
 .venv/
 __pycache__/
 *.duckdb
+# Document personnel, hors projet (ne pas publier)
+Data_interview.pdf
+
+# Sauvegarde des anciennes couleurs marron
+dashboard/sauvegarde_couleurs_marron/
+
+# Notes personnelles et images d'inspiration (hors projet)
+docs/
+imgg/

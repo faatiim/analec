@@ -1,0 +1,358 @@
+<title>Électrification Régionale</title>
+
+  <!-- Polices : Sora pour les titres, Manrope pour le texte -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap">
+
+  <!-- Toute la mise en forme est dans style.css -->
+  <link rel="stylesheet" href="style.css">
+
+
+<!--
+  ORGANISATION DU TABLEAU DE BORD
+  - index.html  : la structure de la page (ce fichier)
+  - style.css   : les couleurs, tailles et la mise en page
+  - donnees.js  : les chiffres de la Banque mondiale (une ligne par pays et par année)
+  - app.js      : les calculs et le remplissage des cartes
+
+  Les éléments vides ci-dessous (ex. <ul id="liste-classement"></ul>)
+  sont remplis automatiquement par app.js.
+-->
+
+<div class="app">
+
+  <!-- ============================================================
+       BARRE LATÉRALE : logo, menu, filtres, utilisateur
+       ============================================================ -->
+  <aside class="barre-laterale">
+
+    <div class="logo">
+      <div class="logo-icone">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#15203A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7z" fill="#15203A"/></svg>
+      </div>
+      <div>
+        <b>Leer.</b>
+        <small>DATA ÉNERGIE</small>
+      </div>
+    </div>
+
+    <nav>
+      <h4>MENU</h4>
+      <div class="menu" id="menu">
+        <a href="#vue" class="actif">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+          Vue d'ensemble
+        </a>
+        <a href="#classement">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>
+          Classement
+        </a>
+        <a href="#tendance">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8M15 7h6v6"/></svg>
+          Tendance
+        </a>
+        <a href="#zones">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 3v9l6 5"/></svg>
+          Ville / campagne
+        </a>
+        <a href="#objectif">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg>
+          Objectif 2030
+        </a>
+        <a href="#pays">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18"/></svg>
+          Pays
+        </a>
+        <a href="#methode">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M6 2h9l5 5v15H6z"/><path d="M14 2v6h6M9 13h8M9 17h6"/></svg>
+          Méthodologie
+        </a>
+      </div>
+    </nav>
+
+    <!-- Filtres : les listes Année et Pays sont remplies par app.js -->
+    <div class="filtres">
+      <div class="filtres-titre">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 4h18l-7 9v6l-4 2v-8z"/></svg>
+        FILTRES
+      </div>
+      <div class="champ">
+        <label for="filtre-annee">Année</label>
+        <select id="filtre-annee"></select>
+      </div>
+      <div class="champ">
+        <label for="filtre-pays">Pays suivi</label>
+        <select id="filtre-pays"></select>
+      </div>
+      <div class="champ">
+        <label for="filtre-indicateur">Indicateur</label>
+        <select id="filtre-indicateur">
+          <option value="acces_total">Accès total</option>
+          <option value="acces_urbain">Accès urbain</option>
+          <option value="acces_rural">Accès rural</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="utilisateur">
+      <div class="avatar">FD</div>
+      <div>
+        <b>Fatima D.</b>
+        <small>Data analyst</small>
+      </div>
+      <span class="point-statut" title="Données à jour"></span>
+    </div>
+  </aside>
+
+
+  <main class="contenu" id="vue">
+
+    <!-- ============================================================
+         EN-TÊTE : titre, recherche, bouton Réinitialiser
+         ============================================================ -->
+    <header class="entete">
+      <div>
+        <h1><span>Accès</span> à l'électricité</h1>
+        <p>Sénégal et 7 voisins d'Afrique de l'Ouest · 2000–2024 · Banque mondiale</p>
+      </div>
+      <div class="barre-outils">
+        <div class="recherche">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+          <input id="recherche-pays" type="search" placeholder="Rechercher un pays…" autocomplete="off">
+        </div>
+        <button class="bouton-principal" id="bouton-reinitialiser" type="button">
+          RÉINITIALISER
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7L3 8M3 3v5h5"/></svg>
+        </button>
+      </div>
+    </header>
+
+
+    <!-- ============================================================
+         INDICATEURS CLÉS : les 4 cartes sont créées par app.js
+         ============================================================ -->
+    <section class="indicateurs" id="indicateurs-cles"></section>
+
+
+    <section class="grille">
+
+      <!-- ==========================================================
+           CLASSEMENT DES 8 PAYS
+           ========================================================== -->
+      <article class="carte double" id="classement">
+        <div class="surtitre">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .8-5.2 4.8 1.5 7L12 17.6 5.7 21.1l1.5-7L2 9.3l7-.8z"/></svg>
+          Classement
+        </div>
+        <h2 id="titre-classement">Pays les mieux raccordés</h2>
+        <p class="sous-titre" id="sous-titre-classement"></p>
+        <ul class="classement-liste" id="liste-classement"></ul>
+      </article>
+
+
+      <!-- ==========================================================
+           TENDANCE : courbe 2000–2024 du pays suivi
+           ========================================================== -->
+      <article class="carte tendance" id="tendance">
+        <div class="surtitre">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h4l3-8 4 16 3-8h6"/></svg>
+          Tendance
+        </div>
+        <h2 id="titre-tendance"></h2>
+        <p class="sous-titre" id="sous-titre-tendance"></p>
+
+        <div class="cadre-graphique">
+          <svg class="graphique" id="graphique-tendance" viewBox="0 0 440 230" role="img"></svg>
+          <div class="infobulle" id="infobulle-tendance"></div>
+        </div>
+
+        <div class="legende">
+          <span><i></i><em id="legende-pays"></em></span>
+          <span><i class="pointilles"></i>Moyenne des 8 pays</span>
+        </div>
+
+        <div class="chiffres-cles">
+          <div><small>Gain sur la période</small><b id="tendance-gain"></b></div>
+          <div><small>Meilleure année</small><b id="tendance-meilleure-annee"></b></div>
+          <div><small>Vs moyenne</small><b id="tendance-vs-moyenne"></b></div>
+        </div>
+      </article>
+
+
+      <!-- ==========================================================
+           VILLE OU CAMPAGNE : anneau + détail urbain / rural
+           ========================================================== -->
+      <article class="carte" id="zones">
+        <div class="carte-entete">
+          <div>
+            <div class="surtitre">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/></svg>
+              Répartition
+            </div>
+            <h2>Ville ou campagne</h2>
+            <p class="sous-titre" id="sous-titre-repartition"></p>
+          </div>
+          <span class="etiquette" id="annee-repartition"></span>
+        </div>
+
+        <div class="anneau-cadre">
+          <svg id="anneau" viewBox="0 0 200 200" role="img"></svg>
+        </div>
+        <ul class="repartition-liste" id="liste-repartition"></ul>
+      </article>
+
+
+      <!-- ==========================================================
+           PODIUM : les 3 premiers pays
+           ========================================================== -->
+      <article class="carte" id="carte-podium">
+        <div class="carte-entete">
+          <div>
+            <div class="surtitre">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 20V12M12 20V5M20 20v-9"/></svg>
+              Podium
+            </div>
+            <h2>Top 3 régional</h2>
+            <p class="sous-titre" id="sous-titre-podium"></p>
+          </div>
+          <span class="etiquette contour">MOYENNE<b id="moyenne-podium"></b></span>
+        </div>
+
+        <div class="podium" id="podium"></div>
+
+        <div class="chiffres-cles">
+          <div><small>Rang du pays suivi</small><b id="podium-rang-pays"></b></div>
+          <div><small>Écart 1er / dernier</small><b id="podium-ecart"></b></div>
+          <div><small>Dernier</small><b id="podium-dernier"></b></div>
+        </div>
+      </article>
+
+
+      <!-- ==========================================================
+           OBJECTIF 2030 (ODD 7) : jauge, rythmes, trajectoire
+           ========================================================== -->
+      <article class="carte objectif" id="objectif">
+        <div class="carte-entete">
+          <div>
+            <div class="surtitre">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.2" fill="currentColor"/></svg>
+              Objectif 2030
+            </div>
+            <h2>Cap sur l'accès universel</h2>
+            <p class="sous-titre">ODD 7.1 : 100 % de la population raccordée en 2030</p>
+          </div>
+          <span class="etiquette" id="objectif-pays"></span>
+        </div>
+
+        <div class="jauge-objectif">
+          <div class="piste"><i id="objectif-jauge"></i></div>
+          <div class="graduation">
+            <span>0 %</span>
+            <span id="objectif-valeur"></span>
+            <span>100 %</span>
+          </div>
+        </div>
+
+        <div class="chiffres-cles">
+          <div><small>Rythme 5 ans</small><b id="objectif-rythme"></b></div>
+          <div><small>Rythme requis</small><b id="objectif-rythme-requis"></b></div>
+          <div><small>100 % atteint</small><b id="objectif-annee"></b></div>
+        </div>
+
+        <div class="cadre-graphique">
+          <svg id="graphique-objectif" role="img"></svg>
+        </div>
+
+        <div class="legende">
+          <span><i></i>Réel</span>
+          <span><i class="pointilles"></i>Au rythme actuel</span>
+          <span><i style="background:var(--hausse)"></i>Trajectoire requise</span>
+        </div>
+
+        <!--
+          TEXTE D'ANALYSE (masqué car jugé trop chargé).
+          Pour le réafficher :
+            1. retirer ce commentaire autour des deux lignes ci-dessous ;
+            2. dans app.js, retirer le commentaire autour de la fonction
+               afficherTexteAnalyse() et de son appel dans afficherObjectif2030().
+
+          <div class="verdict" id="objectif-verdict"></div>
+          <ul class="constats" id="objectif-constats"></ul>
+        -->
+      </article>
+
+
+      <!-- ==========================================================
+           MATRICE DES PAYS : tableau complet, triable
+           ========================================================== -->
+      <article class="carte matrice" id="pays">
+        <div class="carte-entete">
+          <div>
+            <div class="surtitre">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 7l4.5 4L12 4l4.5 7L21 7l-2 12H5z"/></svg>
+              Tous les pays
+            </div>
+            <h2>Matrice des pays</h2>
+            <p class="sous-titre" id="sous-titre-matrice"></p>
+          </div>
+          <span class="etiquette contour">PONDÉRÉ<b id="moyenne-ponderee"></b></span>
+        </div>
+
+        <div class="tableau-defilant">
+          <table class="tableau-pays">
+            <thead><tr id="entete-matrice"></tr></thead>
+            <tbody id="lignes-matrice"></tbody>
+            <tfoot id="total-matrice"></tfoot>
+          </table>
+        </div>
+      </article>
+
+    </section>
+
+
+    <!-- ============================================================
+         MÉTHODOLOGIE
+         ============================================================ -->
+    <section class="carte methodologie" id="methode">
+      <div class="surtitre">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></svg>
+        Méthodologie
+      </div>
+      <h2>Lire ces chiffres avec prudence</h2>
+      <ul>
+        <li>
+          <b>Estimations modélisées.</b>
+          La Banque mondiale combine des enquêtes ménages (DHS, MICS, enquêtes nationales) et un modèle pour les années sans enquête.
+          Un saut brutal signale souvent une nouvelle enquête plutôt qu'un vrai changement :
+          Sénégal 2022→2024 (+15 pts), Burkina Faso 2023→2024 (+12 pts), Mali 2017→2018 (+16 pts) puis 2023→2024 (−5 pts).
+        </li>
+        <li>
+          <b>Données manquantes.</b>
+          L'accès rural n'est pas publié certaines années (Mauritanie depuis 2013, Burkina Faso 2015–2021, Guinée 2000–2005, Gambie 2018–2019, Mali certaines années).
+          Ces cases restent vides (« — ») : aucune valeur n'est interpolée.
+        </li>
+        <li>
+          <b>Calculs.</b>
+          Habitants sans électricité = population × (1 − accès total).
+          Rythme = gain moyen annuel sur les 5 dernières années.
+          Moyenne simple = moyenne des 8 pays ; moyenne pondérée = par la population.
+        </li>
+        <li>
+          <b>Ce que ces données ne disent pas.</b>
+          Avoir accès ne garantit ni la qualité ni la continuité du service (délestages), ni le coût pour les ménages.
+          Indicateurs utiles pour aller plus loin : coupures (SAIDI), consommation par habitant, mix électrique, tarifs.
+        </li>
+      </ul>
+    </section>
+
+    <footer class="sources">
+      Source : Banque mondiale, indicateurs <code>EG.ELC.ACCS.ZS</code>, <code>EG.ELC.ACCS.UR.ZS</code>, <code>EG.ELC.ACCS.RU.ZS</code>, <code>SP.POP.TOTL</code>.
+      Pipeline : API → DuckDB (<code>raw</code> → <code>staging</code> → <code>marts</code>) → Parquet. Cliquez sur un pays pour le suivre.
+    </footer>
+  </main>
+</div>
+
+<!-- Les données d'abord, puis le code qui les affiche -->
+<script src="donnees.js"></script>
+<script src="app.js"></script>

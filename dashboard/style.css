@@ -1,0 +1,1432 @@
+/* =====================================================================
+   STYLE DU TABLEAU DE BORD « ÉLECTRIFICATION RÉGIONALE »
+
+   Sommaire
+     1. Couleurs et polices (à modifier ici pour changer le thème)
+     2. Base de la page
+     3. Barre latérale (logo, menu, filtres, utilisateur)
+     4. En-tête (titre, recherche, bouton)
+     5. Cartes : éléments communs
+     6. Indicateurs clés (les 4 cartes du haut)
+     7. Grille des cartes
+     8. Carte « Classement »
+     9. Carte « Tendance » et éléments de graphique
+    10. Carte « Ville ou campagne » (anneau)
+    11. Carte « Podium »
+    12. Carte « Objectif 2030 »
+    13. Carte « Matrice des pays » (tableau)
+    14. Méthodologie et sources
+    15. Adaptation aux petits écrans
+   ===================================================================== */
+
+
+/* =====================================================================
+   1. COULEURS ET POLICES
+   Toutes les couleurs du tableau de bord viennent d'ici.
+   Changer une valeur ici la change partout.
+   ===================================================================== */
+
+:root {
+  color-scheme: light;
+
+  /* Fond de la page */
+  --fond-page: #EEF1F5;            /* gris-bleu clair */
+  --texte-page: #13213A;           /* titres posés directement sur le fond */
+  --texte-page-discret: #5B6B82;
+
+  /* Cartes et barre latérale */
+  --carte: #1E2B40;                /* bleu ardoise des cartes */
+  --carte-claire: #283851;         /* haut du dégradé des cartes */
+  --carte-foncee: #15203A;         /* bleu nuit de la barre latérale */
+  --bordure: rgba(214, 226, 245, .10);
+
+  /* Textes posés sur les cartes */
+  --texte: #F3F6FB;
+  --texte-secondaire: #C2CDDD;
+  --texte-discret: #8D9BB0;
+
+  /* Couleurs d'accent */
+  --sable: #F2B84B;                /* ambre (électricité) : accent principal */
+  --caramel: #E0873A;
+  --latte: #A9C3E6;
+
+  /* Couleurs de sens : hausse (vert) et baisse (rouge) */
+  --hausse: #7FD1A3;
+  --baisse: #F07C6C;
+
+  /* Polices */
+  --police-titres: "Sora", "Segoe UI", system-ui, sans-serif;
+  --police-texte: "Manrope", "Segoe UI", system-ui, sans-serif;
+}
+
+/* Mode sombre : seul le fond et les cartes changent */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --fond-page: #0C1322;
+    --texte-page: #E6ECF5;
+    --texte-page-discret: #8796AD;
+    --carte: #18233A;
+    --carte-claire: #1F2C46;
+    --carte-foncee: #0F182B;
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --fond-page: #0C1322;
+  --texte-page: #E6ECF5;
+  --texte-page-discret: #8796AD;
+  --carte: #18233A;
+  --carte-claire: #1F2C46;
+  --carte-foncee: #0F182B;
+}
+
+
+/* =====================================================================
+   2. BASE DE LA PAGE
+   ===================================================================== */
+
+:root {
+  /* Marges de sécurité pour les téléphones à encoche */
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--police-texte);
+  font-size: 14px;
+  background: var(--fond-page);
+  color: var(--texte-page);
+}
+
+[hidden] {
+  display: none !important;
+}
+
+button,
+select,
+input {
+  font: inherit;
+}
+
+/* Contour visible quand on navigue au clavier */
+:focus-visible {
+  outline: 2px solid var(--sable);
+  outline-offset: 2px;
+}
+
+/* Mise en page générale : barre latérale à gauche, contenu à droite */
+.app {
+  display: grid;
+  grid-template-columns: 250px minmax(0, 1fr);
+  gap: 18px;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 18px 16px;
+}
+
+
+/* =====================================================================
+   3. BARRE LATÉRALE
+   ===================================================================== */
+
+.barre-laterale {
+  position: sticky;
+  top: calc(18px + env(safe-area-inset-top, 0px));
+  align-self: start;
+  min-height: calc(100vh - 36px);
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding: 22px 16px;
+  border-radius: 22px;
+  background: var(--carte-foncee);
+  color: var(--texte);
+}
+
+/* --- Logo --- */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 6px;
+}
+
+.logo-icone {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  background: var(--sable);
+  box-shadow: 0 0 22px rgba(242, 184, 75, .35);
+}
+
+.logo-icone svg {
+  width: 26px;
+  height: 26px;
+}
+
+.logo b {
+  display: block;
+  font-family: var(--police-titres);
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--sable);
+}
+
+.logo small {
+  display: block;
+  margin-top: 4px;
+  font-size: 9.5px;
+  font-weight: 800;
+  letter-spacing: .16em;
+  color: var(--texte-secondaire);
+}
+
+/* --- Menu --- */
+.barre-laterale h4 {
+  margin: 0 0 8px;
+  padding: 0 8px;
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: .16em;
+  color: var(--texte-discret);
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.menu a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 12px;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  font-size: 14.5px;
+  font-weight: 700;
+  color: var(--texte-secondaire);
+  text-decoration: none;
+}
+
+.menu a svg {
+  flex: none;
+  width: 19px;
+  height: 19px;
+  color: var(--caramel);
+}
+
+.menu a:hover {
+  background: rgba(242, 184, 75, .07);
+  color: var(--texte);
+}
+
+/* Lien du menu actuellement sélectionné */
+.menu a.actif {
+  background: linear-gradient(90deg, rgba(242, 184, 75, .20), rgba(242, 184, 75, .04));
+  border-color: rgba(242, 184, 75, .25);
+  box-shadow: inset 3px 0 0 var(--sable);
+  color: var(--sable);
+}
+
+.menu a.actif svg {
+  color: var(--sable);
+}
+
+/* --- Filtres --- */
+.filtres {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 14px 12px;
+  border: 1px dashed rgba(242, 184, 75, .35);
+  border-radius: 16px;
+}
+
+.filtres-titre {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11.5px;
+  font-weight: 800;
+  letter-spacing: .14em;
+  color: var(--sable);
+}
+
+.filtres-titre svg {
+  width: 14px;
+  height: 14px;
+}
+
+.champ {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.champ label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--texte-secondaire);
+}
+
+/* Liste déroulante avec une petite flèche sable dessinée à droite */
+.champ select {
+  appearance: none;
+  width: 100%;
+  padding: 9px 30px 9px 11px;
+  border: 1px solid var(--bordure);
+  border-radius: 9px;
+  background: var(--carte-claire) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5l5 5 5-5' fill='none' stroke='%23F2B84B' stroke-width='1.8' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat right 11px center;
+  color: var(--texte);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.champ select option {
+  background: var(--carte-foncee);
+  color: var(--texte);
+}
+
+/* --- Utilisateur (en bas de la barre) --- */
+.utilisateur {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 6px 0;
+  border-top: 1px solid var(--bordure);
+}
+
+.avatar {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: var(--caramel);
+  color: var(--carte-foncee);
+  font-family: var(--police-titres);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.utilisateur b {
+  display: block;
+  font-size: 14px;
+}
+
+.utilisateur small {
+  font-size: 12px;
+  color: var(--texte-discret);
+}
+
+.point-statut {
+  margin-left: auto;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--hausse);
+  box-shadow: 0 0 8px var(--hausse);
+}
+
+
+/* =====================================================================
+   4. EN-TÊTE
+   ===================================================================== */
+
+.contenu {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.entete {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.entete h1 {
+  margin: 0;
+  font-family: var(--police-titres);
+  font-size: clamp(28px, 3.4vw, 44px);
+  font-weight: 600;
+  letter-spacing: -.02em;
+  color: var(--texte-page);
+  text-wrap: balance;
+}
+
+/* Premier mot du titre en caramel */
+.entete h1 span {
+  color: var(--caramel);
+}
+
+.entete p {
+  margin: 4px 0 0;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--texte-page-discret);
+}
+
+.barre-outils {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  border-radius: 18px;
+  background: var(--carte-foncee);
+}
+
+.recherche {
+  flex: 1 1 220px;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 12px;
+  border: 1px solid var(--bordure);
+  border-radius: 12px;
+  background: var(--carte-claire);
+}
+
+.recherche svg {
+  flex: none;
+  width: 16px;
+  height: 16px;
+  color: var(--texte-discret);
+}
+
+.recherche input {
+  width: 100%;
+  min-width: 0;
+  padding: 10px 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: var(--texte);
+  font-size: 13.5px;
+}
+
+.recherche input::placeholder {
+  color: var(--texte-discret);
+}
+
+.bouton-principal {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border: 0;
+  border-radius: 12px;
+  background: var(--sable);
+  box-shadow: 0 0 18px rgba(242, 184, 75, .35);
+  color: var(--carte-foncee);
+  font-size: 12.5px;
+  font-weight: 800;
+  letter-spacing: .08em;
+  cursor: pointer;
+}
+
+.bouton-principal:hover {
+  filter: brightness(1.06);
+}
+
+.bouton-principal svg {
+  width: 14px;
+  height: 14px;
+}
+
+
+/* =====================================================================
+   5. CARTES : ÉLÉMENTS COMMUNS
+   ===================================================================== */
+
+.carte {
+  min-width: 0;
+  padding: 20px;
+  border: 1px solid var(--bordure);
+  border-radius: 20px;
+  background: linear-gradient(160deg, var(--carte-claire), var(--carte) 60%);
+  box-shadow: 0 10px 24px rgba(19, 33, 58, .16);
+  color: var(--texte);
+}
+
+/* Petit titre en majuscules au-dessus du titre de la carte */
+.surtitre {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--sable);
+}
+
+.surtitre svg {
+  width: 14px;
+  height: 14px;
+}
+
+.carte h2 {
+  margin: 6px 0 0;
+  font-family: var(--police-titres);
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: -.01em;
+  text-wrap: balance;
+}
+
+.carte .sous-titre {
+  margin: 4px 0 0;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--texte-discret);
+}
+
+/* En-tête de carte avec une étiquette à droite */
+.carte-entete {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+/* Étiquette pleine (ex. « 2024 ») */
+.etiquette {
+  padding: 6px 10px;
+  border-radius: 9px;
+  background: var(--sable);
+  color: var(--carte-foncee);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .06em;
+  white-space: nowrap;
+}
+
+/* Étiquette à contour (ex. « MOYENNE 62,4 % ») */
+.etiquette.contour {
+  border: 1px solid rgba(242, 184, 75, .4);
+  background: transparent;
+  color: var(--sable);
+  line-height: 1.25;
+  text-align: center;
+}
+
+.etiquette.contour b {
+  display: block;
+  font-family: var(--police-titres);
+  font-size: 16px;
+}
+
+/* Rangée de 3 petits chiffres en bas d'une carte */
+.chiffres-cles {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.chiffres-cles div {
+  min-width: 0;
+  padding: 9px 11px;
+  border: 1px solid var(--bordure);
+  border-radius: 11px;
+  background: rgba(6, 12, 24, .22);
+}
+
+.chiffres-cles small {
+  display: block;
+  overflow: hidden;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--texte-discret);
+}
+
+.chiffres-cles b {
+  font-family: var(--police-titres);
+  font-size: 16px;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.chiffres-cles b em {
+  margin-left: 4px;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 700;
+  color: var(--texte-discret);
+}
+
+
+/* =====================================================================
+   6. INDICATEURS CLÉS (les 4 cartes du haut)
+   ===================================================================== */
+
+.indicateurs {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.indicateur {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 18px 20px;
+}
+
+/* Carte de l'indicateur choisi dans le filtre « Indicateur » */
+.indicateur.actif {
+  border-color: rgba(242, 184, 75, .6);
+  box-shadow: 0 0 0 1px rgba(242, 184, 75, .35), 0 10px 26px rgba(19, 33, 58, .22);
+}
+
+.indicateur-haut {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.indicateur-nom {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--texte);
+}
+
+/* Petit point lumineux devant le nom */
+.indicateur-nom i {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--sable);
+  box-shadow: 0 0 8px var(--sable);
+}
+
+.indicateur-icone {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(242, 184, 75, .18);
+  border-radius: 10px;
+  background: rgba(242, 184, 75, .10);
+  color: var(--sable);
+}
+
+.indicateur-icone svg {
+  width: 17px;
+  height: 17px;
+}
+
+.indicateur-valeur {
+  font-family: var(--police-titres);
+  font-size: 34px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -.02em;
+  line-height: 1.05;
+}
+
+.indicateur-valeur small {
+  margin-left: 2px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--texte-secondaire);
+}
+
+.indicateur-pied {
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--texte-discret);
+}
+
+/* Ligne « +8,7 pt vs 2023 » */
+.variation {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12.5px;
+  font-weight: 800;
+}
+
+.variation.hausse { color: var(--hausse); }
+.variation.baisse { color: var(--baisse); }
+.variation.stable { color: var(--texte-discret); }
+
+.variation .comparaison {
+  font-weight: 600;
+  color: var(--texte-discret);
+}
+
+
+/* =====================================================================
+   7. GRILLE DES CARTES
+   Toutes les cartes d'une même rangée prennent la même hauteur.
+   ===================================================================== */
+
+.grille {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 16px;
+}
+
+.grille > .carte {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Carte qui occupe deux colonnes */
+.double {
+  grid-column: span 2;
+}
+
+
+/* =====================================================================
+   8. CARTE « CLASSEMENT »
+   ===================================================================== */
+
+.classement-liste {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.classement-liste li {
+  display: grid;
+  grid-template-columns: 26px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border: 1px solid var(--bordure);
+  border-radius: 11px;
+  background: rgba(6, 12, 24, .22);
+  font-size: 13.5px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.classement-liste li:hover {
+  border-color: rgba(242, 184, 75, .35);
+}
+
+/* Pays suivi */
+.classement-liste li.selectionne {
+  border-color: rgba(242, 184, 75, .45);
+  background: rgba(242, 184, 75, .13);
+}
+
+.classement-liste .rang {
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+  color: var(--texte-discret);
+}
+
+.classement-liste .nom-et-barre {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.classement-liste .nom-et-barre span {
+  flex: none;
+  width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.classement-liste .jauge {
+  flex: 1;
+  min-width: 40px;
+  height: 4px;
+  overflow: hidden;
+  border-radius: 3px;
+  background: rgba(243, 246, 251, .07);
+}
+
+.classement-liste .jauge i {
+  display: block;
+  height: 100%;
+  border-radius: 3px;
+  background: linear-gradient(90deg, var(--caramel), var(--sable));
+}
+
+.classement-liste .valeur {
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  color: var(--sable);
+}
+
+.vide {
+  padding: 14px 2px;
+  font-size: 13px;
+  color: var(--texte-discret);
+}
+
+
+/* =====================================================================
+   9. CARTE « TENDANCE » ET ÉLÉMENTS DE GRAPHIQUE
+   ===================================================================== */
+
+/* Cadre qui s'étire pour remplir la carte ; le graphique prend sa taille */
+.cadre-graphique {
+  position: relative;
+  flex: 1;
+  min-height: 220px;
+  margin-top: 12px;
+}
+
+.cadre-graphique > svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+svg.graphique {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.legende {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 10px;
+  font-size: 11.5px;
+  font-weight: 700;
+  color: var(--texte-secondaire);
+}
+
+.legende span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Petit trait de couleur devant chaque entrée de légende */
+.legende i {
+  width: 16px;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--sable);
+}
+
+.legende i.pointilles {
+  background: repeating-linear-gradient(90deg, var(--texte-discret) 0 4px, transparent 4px 7px);
+}
+
+.legende em {
+  font-style: normal;
+}
+
+/* Bulle qui apparaît au survol de la courbe */
+.infobulle {
+  position: absolute;
+  padding: 7px 10px;
+  border: 1px solid rgba(242, 184, 75, .35);
+  border-radius: 9px;
+  background: var(--carte-foncee);
+  color: var(--texte);
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -110%);
+  transition: opacity .1s;
+}
+
+.infobulle b {
+  font-family: var(--police-titres);
+  color: var(--sable);
+}
+
+
+/* =====================================================================
+   10. CARTE « VILLE OU CAMPAGNE » (anneau)
+   ===================================================================== */
+
+.anneau-cadre {
+  display: grid;
+  place-items: center;
+  margin: 12px 0 6px;
+}
+
+.anneau-cadre svg {
+  width: 190px;
+  height: 190px;
+  filter: drop-shadow(0 0 14px rgba(242, 184, 75, .25));
+}
+
+.repartition-liste {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 6px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.repartition-liste li {
+  display: grid;
+  grid-template-columns: 4px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Barre de couleur verticale à gauche de chaque ligne */
+.repartition-liste li i {
+  height: 32px;
+  border-radius: 2px;
+}
+
+.repartition-liste b {
+  display: block;
+  font-size: 13.5px;
+}
+
+.repartition-liste small {
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--texte-discret);
+}
+
+.repartition-liste .pourcentage {
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  color: var(--sable);
+}
+
+
+/* =====================================================================
+   11. CARTE « PODIUM »
+   ===================================================================== */
+
+.podium {
+  flex: 1;
+  min-height: 230px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: stretch;
+  gap: 14px;
+  margin-top: 16px;
+  padding: 0 4px;
+}
+
+.podium-colonne {
+  min-width: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+/* Zone où pousse la barre ; sa hauteur = 100 % */
+.podium-socle {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border-bottom: 1px solid var(--bordure);
+}
+
+.podium-barre {
+  width: min(58px, 100%);
+  border-radius: 10px 10px 4px 4px;
+}
+
+.podium-valeur {
+  font-family: var(--police-titres);
+  font-size: 16px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  color: var(--sable);
+}
+
+.podium-pays {
+  max-width: 100%;
+  overflow: hidden;
+  font-size: 12.5px;
+  font-weight: 700;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.podium-rang {
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--texte-discret);
+}
+
+
+/* =====================================================================
+   12. CARTE « OBJECTIF 2030 »
+   ===================================================================== */
+
+.jauge-objectif {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 16px;
+}
+
+.jauge-objectif .piste {
+  position: relative;
+  height: 12px;
+  border-radius: 7px;
+  background: rgba(243, 246, 251, .08);
+}
+
+.jauge-objectif .piste i {
+  position: absolute;
+  inset: 0 auto 0 0;
+  border-radius: 7px;
+  background: linear-gradient(90deg, var(--caramel), var(--sable));
+  box-shadow: 0 0 12px rgba(242, 184, 75, .35);
+}
+
+.jauge-objectif .graduation {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10.5px;
+  font-weight: 700;
+  color: var(--texte-discret);
+}
+
+.objectif .cadre-graphique {
+  min-height: 170px;
+}
+
+/* --- Texte d'analyse : actuellement masqué (voir index.html) ---
+   Ces styles servent seulement si on réactive le texte. */
+.verdict {
+  margin-top: 12px;
+  padding: 11px 13px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.verdict.hausse {
+  border: 1px solid rgba(127, 209, 163, .3);
+  background: rgba(127, 209, 163, .12);
+}
+
+.verdict.baisse {
+  border: 1px solid rgba(240, 124, 108, .3);
+  background: rgba(240, 124, 108, .12);
+}
+
+.verdict b {
+  color: var(--sable);
+}
+
+.constats {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 14px 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--texte-secondaire);
+}
+
+.constats li {
+  display: grid;
+  grid-template-columns: 8px minmax(0, 1fr);
+  gap: 10px;
+}
+
+.constats li::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  margin-top: 7px;
+  border-radius: 50%;
+  background: var(--sable);
+}
+
+.constats b {
+  color: var(--texte);
+}
+
+
+/* =====================================================================
+   13. CARTE « MATRICE DES PAYS » (tableau)
+   ===================================================================== */
+
+/* La matrice occupe toute la largeur */
+.matrice {
+  grid-column: 1 / -1;
+}
+
+/* Sur petit écran, le tableau défile horizontalement dans sa carte */
+.tableau-defilant {
+  margin-top: 14px;
+  overflow-x: auto;
+}
+
+.tableau-pays {
+  width: 100%;
+  min-width: 940px;
+  border-collapse: separate;
+  border-spacing: 0 6px;          /* espace entre les lignes */
+  font-size: 13px;
+}
+
+/* --- En-têtes de colonnes (cliquables pour trier) --- */
+.tableau-pays th {
+  padding: 0 10px 2px;
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: .1em;
+  text-align: right;
+  white-space: nowrap;
+  color: var(--texte-discret);
+}
+
+.tableau-pays th button {
+  all: unset;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.tableau-pays th button:hover,
+.tableau-pays th button.actif {
+  color: var(--sable);
+}
+
+.tableau-pays th button:focus-visible {
+  outline: 2px solid var(--sable);
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+
+/* Les deux premières colonnes (rang, pays) sont alignées à gauche */
+.tableau-pays th:nth-child(-n+2),
+.tableau-pays td:nth-child(-n+2) {
+  text-align: left;
+}
+
+/* --- Lignes : chaque ligne ressemble à une petite carte arrondie --- */
+.tableau-pays tr {
+  cursor: pointer;
+}
+
+.tableau-pays td {
+  padding: 9px 8px;
+  border-top: 1px solid var(--bordure);
+  border-bottom: 1px solid var(--bordure);
+  background: rgba(6, 12, 24, .22);
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.tableau-pays td:first-child {
+  border-left: 1px solid var(--bordure);
+  border-radius: 11px 0 0 11px;
+  font-weight: 800;
+  color: var(--texte-discret);
+}
+
+.tableau-pays td:last-child {
+  border-right: 1px solid var(--bordure);
+  border-radius: 0 11px 11px 0;
+}
+
+/* Pays suivi */
+.tableau-pays tr.selectionne td {
+  border-color: rgba(242, 184, 75, .4);
+  background: rgba(242, 184, 75, .13);
+}
+
+/* --- Ligne de total en bas --- */
+.tableau-pays tfoot td {
+  padding-top: 12px;
+  border: 0;
+  border-top: 1px dashed rgba(242, 184, 75, .35);
+  border-radius: 0 !important;
+  background: transparent;
+  font-weight: 700;
+  color: var(--texte-secondaire);
+}
+
+.tableau-pays tfoot td:first-child {
+  border-left: 0;
+}
+
+.tableau-pays tfoot td:last-child {
+  border-right: 0;
+}
+
+/* --- Contenu des cellules --- */
+.cellule-pays {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-weight: 700;
+}
+
+/* Code pays (SEN, MLI…) dans un petit cadre */
+.code-pays {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 26px;
+  border: 1px solid rgba(242, 184, 75, .3);
+  border-radius: 8px;
+  background: rgba(242, 184, 75, .15);
+  color: var(--sable);
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: .04em;
+}
+
+/* Valeur + petite barre de progression */
+.cellule-jauge {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.cellule-jauge b {
+  font-family: var(--police-titres);
+  font-size: 13.5px;
+  font-variant-numeric: tabular-nums;
+}
+
+.cellule-jauge .jauge {
+  width: 110px;
+  height: 4px;
+  margin-top: 5px;
+  overflow: hidden;
+  border-radius: 3px;
+  background: rgba(243, 246, 251, .08);
+}
+
+.cellule-jauge .jauge i {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, var(--caramel), var(--sable));
+}
+
+/* Badge « ↑ +2,1 pt » */
+.badge-variation {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 5px 9px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+
+.badge-variation.hausse {
+  border: 1px solid rgba(127, 209, 163, .3);
+  background: rgba(127, 209, 163, .12);
+  color: var(--hausse);
+}
+
+.badge-variation.baisse {
+  border: 1px solid rgba(240, 124, 108, .3);
+  background: rgba(240, 124, 108, .12);
+  color: var(--baisse);
+}
+
+.badge-variation.stable {
+  border: 1px solid var(--bordure);
+  color: var(--texte-discret);
+}
+
+
+/* =====================================================================
+   14. MÉTHODOLOGIE ET SOURCES
+   ===================================================================== */
+
+/* Carte sans fond, posée directement sur le fond de la page */
+.methodologie {
+  border: 1px dashed var(--texte-page-discret);
+  background: transparent;
+  box-shadow: none;
+  color: var(--texte-page);
+}
+
+.methodologie .surtitre {
+  color: var(--caramel);
+}
+
+.methodologie h2 {
+  color: var(--texte-page);
+}
+
+.methodologie ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px 28px;
+  margin: 10px 0 0;
+  padding-left: 18px;
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--texte-page-discret);
+}
+
+.methodologie ul b {
+  color: var(--texte-page);
+}
+
+.sources {
+  padding: 2px 4px;
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--texte-page-discret);
+}
+
+.sources code {
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 11px;
+}
+
+
+/* =====================================================================
+   15. ADAPTATION AUX PETITS ÉCRANS
+   ===================================================================== */
+
+/* Tablette large : 2 colonnes */
+@media (max-width: 1180px) {
+  .grille {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .grille .tendance,
+  .grille .objectif {
+    grid-column: span 2;
+  }
+
+  .indicateurs {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .methodologie ul {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* Tablette : la barre latérale passe au-dessus du contenu */
+@media (max-width: 900px) {
+  .app {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .barre-laterale {
+    position: static;
+    min-height: 0;
+  }
+
+  .menu {
+    flex-direction: row;
+    overflow-x: auto;
+  }
+
+  .menu a {
+    white-space: nowrap;
+  }
+
+  .filtres {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .filtres-titre {
+    grid-column: 1 / -1;
+  }
+
+  .utilisateur {
+    display: none;
+  }
+}
+
+/* Téléphone : une seule colonne */
+@media (max-width: 640px) {
+  .grille {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .grille > *,
+  .double,
+  .grille .tendance,
+  .grille .objectif,
+  .matrice {
+    grid-column: auto;
+  }
+
+  .filtres {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .classement-liste .nom-et-barre span {
+    width: 96px;
+  }
+}
+
+/* Petit téléphone : indicateurs l'un sous l'autre */
+@media (max-width: 430px) {
+  .indicateurs {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* Pas d'animation pour les personnes qui les ont désactivées */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}

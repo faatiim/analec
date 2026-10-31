@@ -2,7 +2,9 @@
 
 Analyse de l'accès à l'électricité au Sénégal et dans 7 pays voisins à partir des données de la Banque mondiale : un pipeline de données en Python et SQL (DuckDB), et un tableau de bord interactif pour lire les résultats.
 
-![Aperçu du tableau de bord](dashboard/apercu.png)
+**Tableau de bord en ligne : [analec-dashboard.vercel.app](https://analec-dashboard.vercel.app/)**
+
+[![Aperçu du tableau de bord](dashboard/apercu.png)](https://analec-dashboard.vercel.app/)
 
 ## La question
 
@@ -32,7 +34,7 @@ API Banque mondiale  ->  JSON bruts  ->  DuckDB (raw -> staging -> marts)  ->  P
 | Extraction | `src/extract.py` | Interroge l'API de la Banque mondiale pour 4 indicateurs et 8 pays (2000-2024). Nouvelles tentatives en cas d'échec, et reprise sans retélécharger ce qui existe déjà. |
 | Chargement | `src/load.py` | Charge chaque fichier JSON dans une table du schéma `raw` de DuckDB, avec la date de chargement. Relançable sans doublons. |
 | Transformation | `src/transform.py` + `sql/` | Exécute les requêtes SQL dans l'ordre : nettoyage et mise au format long (`staging`), puis tables finales (`marts`). |
-| Export | `src/export.py` | Exporte les tables finales en Parquet (`data/export/`), lisibles par Power BI, pandas ou le tableau de bord. |
+| Export | `src/export.py` | Exporte les tables finales en Parquet (`data/export/`), lisibles par Power BI ou pandas. |
 
 Les indicateurs utilisés :
 
@@ -55,7 +57,7 @@ Un modèle en étoile simple, dans le schéma `marts` :
 
 ## Le tableau de bord
 
-Le dossier `dashboard/` contient une page web autonome (HTML, CSS et JavaScript, sans bibliothèque) qui lit les données exportées :
+Le dossier `dashboard/` contient une page web autonome (HTML, CSS et JavaScript, sans bibliothèque). Elle lit `donnees.js`, une copie de la table `marts.fct_electricite` jointe à `dim_pays` (une ligne par pays et par année), ce qui permet de l'ouvrir sans serveur :
 
 - 4 indicateurs clés avec l'évolution sur un an ;
 - classement des 8 pays et podium ;
@@ -66,12 +68,12 @@ Le dossier `dashboard/` contient une page web autonome (HTML, CSS et JavaScript,
 - filtres par année, pays et indicateur, recherche d'un pays ;
 - affichage clair ou sombre selon le réglage de l'ordinateur.
 
-Pour l'ouvrir : double-cliquer sur `dashboard/index.html`.
+Version en ligne : https://analec-dashboard.vercel.app/ (ou, en local, double-cliquer sur `dashboard/index.html`).
 
 ## Limites
 
 - **Estimations modélisées.** La Banque mondiale combine des enquêtes ménages (DHS, MICS, enquêtes nationales) et un modèle pour les années sans enquête. Un saut brutal signale souvent une nouvelle enquête plutôt qu'un vrai changement.
-- **Données manquantes.** L'accès rural n'est pas publié certaines années (Mauritanie depuis 2013, Burkina Faso 2015-2021, Guinée 2000-2005, Gambie 2018-2019). Ces valeurs restent vides : je n'ai rien interpolé.
+- **Données manquantes.** L'accès rural n'est pas publié certaines années (Mauritanie depuis 2013, Burkina Faso 2015-2021, Guinée 2000-2005, Mali 2000, 2001, 2010, 2012 et 2017, Gambie 2018-2019). Ces valeurs restent vides : je n'ai rien interpolé.
 - **Accès ne veut pas dire service.** Être raccordé ne dit rien des coupures, de la qualité du courant ni de son coût. Pour aller plus loin : durée des coupures (SAIDI), consommation par habitant, mix électrique, tarifs.
 
 ## Lancer le projet

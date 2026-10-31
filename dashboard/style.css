@@ -574,7 +574,8 @@ input {
 }
 
 .chiffres-cles b em {
-  margin-left: 4px;
+  display: block;
+  margin-left: 0;
   font-size: 11px;
   font-style: normal;
   font-weight: 700;
